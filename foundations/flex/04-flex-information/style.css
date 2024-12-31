@@ -1,5 +1,8 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  /* esto lo había puesto en .title y .elements,
+  al ponerlo aqui evitamos repetir código */
 }
 
 img {
@@ -10,8 +13,30 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* text-align: center; */
+  margin-bottom: 32px;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  /* padding: 0;
+  margin: 0; 
+  Esto no hacía absolutamente nada*/
+  gap: 52px;
+}
+
+
+.elements{
+  /* Corregido*/
+  max-width: 200px;
+  /* text-align: center; */
+  /* width: 200px; 
+  Esto me daba el resultado parecido al esperado pero no lo limitaba a 
+  un máximo.*/
+  /* height: 200px; 
+  Esto no hacía absolutamente nada.*/
+}
 /* do not edit this footer */
 .footer {
   position: fixed;
